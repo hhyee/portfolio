@@ -4,18 +4,76 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
-		h1{
-			background-color: black;
-			color: white;
-			text-align: center;
-		}
-		p{
-			text-align: center;
-		}
+		* {
+			  box-sizing: border-box;
+			}
+
+		body {
+			  margin: 0;
+			  min-width: 992px;
+			  font-family: "Helvetica";
+			}
+		#navbar {
+			  padding: 0 30px;
+			  overflow: hidden;
+			  background-color: white;
+
+			}
+
+		#img_logo{
+			  vertical-align: middle;
+			}
+
+		#logo {
+			  font-family: "Helvetica";
+			  float: left;
+			  line-height : 60px;
+			  
+			}
+
+		#menu {
+			  float:right;
+			  margin: 0;
+			  padding: 0;
+			  list-style:none;
+			  font-size: 16px;
+			}
+
+		#menu li {
+			  float:left; 
+			  
+			}
+
+		#menu li a{
+			  padding-left:15px;
+			  padding-right:15px;
+			  line-height : 60px;
+			  text-decoration: none;
+			  display: block;
+			  color : black; 
+			  font-weight: bold;
+			  font-size: 13px;
+			}	
+
 	</style>
 </head>
 <body>
-	<h1>혜령 포트폴리오</h1>
-	<p>생각만큼 어렵지 않습니다!</p>
+	<div id="navbar">
+	    <a id="logo" href="#">
+	      <img src="img/logo.png" height="20" id="img_logo">
+	    </a>
+	    <ul id="menu">
+	      <li><a href="#">Contact</a></li>
+	      <li><a href="#">Shop</a></li>
+	      <li><a href="#">Cart</a></li>
+	      <li><a href="#">Login</a></li>
+	    </ul>
+	  </div>
+
+	<div class="hero-header">
+    <div class="info">
+    </div>
+  </div>
+
 </body>
 </html>
