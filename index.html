@@ -12,12 +12,12 @@
 			  margin: 0;
 			  min-width: 992px;
 			  font-family: "Helvetica";
+			  background-color: black;
 			}
 		#navbar {
-			  padding: 0 30px;
+			  padding: 30px 70px;
 			  overflow: hidden;
-			  background-color: white;
-
+			  background-color: black;
 			}
 
 		#img_logo{
@@ -28,7 +28,8 @@
 			  font-family: "Helvetica";
 			  float: left;
 			  line-height : 60px;
-			  
+			  position: fixed;
+			  z-index: 1;
 			}
 
 		#menu {
@@ -37,11 +38,12 @@
 			  padding: 0;
 			  list-style:none;
 			  font-size: 16px;
+
 			}
 
 		#menu li {
 			  float:left; 
-			  
+
 			}
 
 		#menu li a{
@@ -50,30 +52,119 @@
 			  line-height : 60px;
 			  text-decoration: none;
 			  display: block;
-			  color : black; 
-			  font-weight: bold;
+			  color : lightgray; 
+			  font-weight: middle;
 			  font-size: 13px;
-			}	
+			  /*position: fixed;*/
+			  z-index: 1;
+			}
+
+
+		.portfolio{
+			margin-left: 70px;
+			font-size: 40px;
+			font-weight: bold;
+			color: white;
+			margin-top: 40px;
+			line-height: 1.1;
+		}
+
+		p{
+			color: blue;
+		}	
+
+		header { 
+		    background-size: cover;
+		}	
+
+		header h1 { 
+			 position: fixed;
+			}
+
+		main { 
+			margin-top: 600px;
+			background: black;
+			position: relative;
+			border: 1px solid black;
+		}
+
+		.more{
+				text-decoration: none;
+				color: black;
+				display: inline-block;
+
+			}
+
+		.contents{
+			display: inline-block;
+			width: 884px;
+			text-align: center;
+			}		
+		table{
+			border-spacing: 22px;
+			border-collapse: separate;
+		}
+
+			
 
 	</style>
 </head>
 <body>
 	<div id="navbar">
 	    <a id="logo" href="#">
-	      <img src="img/logo.png" height="20" id="img_logo">
+	      <img src="img/logo.png" height="25" id="img_logo">
 	    </a>
 	    <ul id="menu">
+	      <li><a href="#">Home</a></li>
+	      <li><a href="#">Work</a></li>
 	      <li><a href="#">Contact</a></li>
-	      <li><a href="#">Shop</a></li>
-	      <li><a href="#">Cart</a></li>
-	      <li><a href="#">Login</a></li>
 	    </ul>
-	  </div>
+	 </div>
+	 <div class="clearfix"></div>
 
-	<div class="hero-header">
-    <div class="info">
-    </div>
-  </div>
+		<div class="hero-header">
+		    <div class="info">
+		    </div>
+		</div>
+
+	<header>
+	<div class="portfolio">
+	  	<h1>
+	  		The right foundation is <br> to put us on a higher ground.<br>
+			If you don't get it right, <br>you end up shaking.
+	  	</h1>
+	</div>
+	</header>
+	
+	<main>
+
+
+	<center><div class=“contents”>
+	<table> 
+          <tr> 
+              <td class="n1"><img style="width:280px;height:320px;" src="img/work1.png" /></td>
+              <td class="n2"><img style="width:280px;height:320px;" src="img/work2.png" /></td>  
+              <td class="n3" rowspan="2"><img style="width:280px;height:610px;" src="img/work3.png" /></td> 
+          </tr> 
+          <tr> 
+              <td class="n4" colspan="2"><img style="width:582px;height:260px;" src="img/work4.png" /></td> 
+          </tr> 
+      </table>
+      </div></center>
+	</main>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<footer>
+		
+	</footer>
+
+	
 
 </body>
 </html>
