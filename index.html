@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Home</title>
 	<style>
 		* {
 			  box-sizing: border-box;
@@ -39,11 +39,12 @@
 			  list-style:none;
 			  font-size: 16px;
 
+
 			}
 
 		#menu li {
 			  float:left; 
-
+				
 			}
 
 		#menu li a{
@@ -55,11 +56,18 @@
 			  color : lightgray; 
 			  font-weight: middle;
 			  font-size: 13px;
-			  /*position: fixed;*/
 			  z-index: 1;
 			}
 
+		#menu li a:hover{
+			  color: green;
+			  }	
 
+		.clearfix{
+			clear: both;
+		}	
+
+		
 		.portfolio{
 			margin-left: 70px;
 			font-size: 40px;
@@ -105,20 +113,37 @@
 			border-collapse: separate;
 		}
 
-			
+
+		.more:hover{
+			opacity: 0.4;
+		}
+
+		.expand_img:hover { transform:scale(1.05); -o-transform:scale(1.05); -moz-transform:scale(1.05); -webkit-transform:scale(1.05);transition: transform .35s;  -o-transition: transform .35s;  -moz-transition: transform .35s;  -webkit-transition: transform .35s; }
+
+
+		.foot{
+			font-size: 12px;
+			color: white;
+			text-align: center;
+			margin-top: 100px;
+			margin-bottom: 50px; 
+		}	
 
 	</style>
 </head>
+
 <body>
 	<div id="navbar">
-	    <a id="logo" href="#">
-	      <img src="img/logo.png" height="25" id="img_logo">
+	    <a id="logo" href="index.html">
+	      <img  src="img/logo.png" height="25" id="img_logo">
 	    </a>
+	    <div id="pop">
 	    <ul id="menu">
-	      <li><a href="#">Home</a></li>
-	      <li><a href="#">Work</a></li>
-	      <li><a href="#">Contact</a></li>
+	      <li><a href="index.html">Home</a></li>
+	      <li><a href="work1.html">Work</a></li>
+	      <li><a href="about.html">About</a></li>
 	    </ul>
+	    </div>
 	 </div>
 	 <div class="clearfix"></div>
 
@@ -142,12 +167,31 @@
 	<center><div class=“contents”>
 	<table> 
           <tr> 
-              <td class="n1"><img style="width:280px;height:320px;" src="img/work1.png" /></td>
-              <td class="n2"><img style="width:280px;height:320px;" src="img/work2.png" /></td>  
-              <td class="n3" rowspan="2"><img style="width:280px;height:610px;" src="img/work3.png" /></td> 
+          	 <td class="n1"><a class="more" href="work1.html">
+              	<img class="expand_img" style="width:280px;height:320px;" src="img/work1.png" />
+              	</a>
+              </td> 
+
+              
+              <td class="n2"><a class="more" href="work2.html">
+              	<img class="expand_img" style="width:280px;height:320px;" src="img/work2.png" />
+              	</a>
+              </td> 
+              
+              <td class="n3" rowspan="2">
+              	<a class="more" href="work3.html"> 
+              		<img class="expand_img" style="width:280px;height:610px;" src="img/work3.png"/>
+              	</a>
+              </td>
+          
           </tr> 
           <tr> 
-              <td class="n4" colspan="2"><img style="width:582px;height:260px;" src="img/work4.png" /></td> 
+              <td class="n4" colspan="2">
+              	<a class="more" href="work4.html">
+              		<img class="expand_img" style="width:582px;height:260px;" src="img/work4.png"/>
+              	</a>
+              </td> 
+          
           </tr> 
       </table>
       </div></center>
@@ -161,7 +205,7 @@
 	<br>
 
 	<footer>
-		
+		<p class="foot">&copy; 2019 BaekHyeryeong Portolio / All rights reserved</p>
 	</footer>
 
 	
